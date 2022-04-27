@@ -39,21 +39,27 @@
       color: crimson; }
   
   main {
-    width: 838px;
+    width: 85%;
     min-height: 500px;
+    background: white;
     float: left;
     padding: 15px;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+ }
     main h2 {
-      margin: 0; }
+      margin: 0;
+    padding: 10px; }
     main p {
-      display: block; }
+      display: block;
+      text-align: right;
+      margin-top: 0;  
+    }
   
   aside {
     float: right;
     background: lightblue;
-    width: 160px;
-    min-height: 500px; }
+    width: 199px;
+    min-height: 672px; }
     aside ul {
       text-decoration: none; }
     aside ul li {
