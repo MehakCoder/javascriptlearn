@@ -1,5 +1,5 @@
 var element;
 
-element = document;
+element = document.all;
 
 console.log(element);
