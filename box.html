@@ -7,45 +7,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>add box</title>
     <style>
-        .Wrapper {
+        .Wrapper{
+          border: 3px solid red;
+          margin: 0;
+          padding: 0;
+        }
+        .content {
             border: 1px solid black;
             height: 500px;
             width: 950px;
         }
-        .Wrapper h1 {
+        .content h1 {
             font-size: 24px;
             margin-left: 2px;
         }
-        .popbox{
-            width: 400px;
-            height: 200px;
-            background: lightgreen;
-            position: fixed;
-            top: 30%;
-            left:calc(50% - 200px);
-            display: none;
+        .adverst-box{
+            border:1px solid black;
+            float: right;
+            width: 300px;
+            height: 500px;
         }
-        #closebtn{
+        #flower {
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 150px;
+       }
+       #closebtn{
          position: absolute;
-         right: -24px;
-         top: -24px;
+         /* right: -24px;
+         top: -24px; */
       }
+
+       
     </style>
 </head>
 
 <body>
     <div class="Wrapper">
+        <div class="content">
         <h1>Advertisment box</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, atque fuga. Unde quod, ducimus quidem et
             quasi repellendus eius accusamus corporis earum accusantium voluptatibus ab, quo quibusdam ipsa amet
             repellat. Natus corrupti est, harum ipsam, tenetur quisquam iste cumque nobis animi illum commodi, dolore
             sit! Autem minima asperiores consequuntur facilis!</p>
         </div>   
-        <div class="popbox">
+        <div class="adverst-box">
             <img id="closebtn" src="image/close-btn.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Quam, atque fuga. Unde quod, ducimus quidem et
+                quasi repellendus eius accusamus corporis earum accusantium</p>
+            <img id="flower" src="image/flower.jpg" alt="">
         </div>
-    
+    </div>  
+    </body>
 </body>
 
 </html>
