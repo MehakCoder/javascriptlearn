@@ -8,14 +8,16 @@
     <title>add box</title>
     <style>
         .Wrapper{
-          border: 3px solid red;
           margin: 0;
           padding: 0;
         }
         .content {
             border: 1px solid black;
-            height: 500px;
-            width: 950px;
+            width: 1000px;
+            min-height: 500px;
+            float: left;
+            padding: 15px;
+           box-sizing: border-box;
         }
         .content h1 {
             font-size: 24px;
@@ -23,20 +25,26 @@
         }
         .adverst-box{
             border:1px solid black;
+            background-color: antiquewhite;
             float: right;
             width: 300px;
             height: 500px;
         }
+        .adverst-box p{
+            font-size: larger;
+            text-align: center;
+        }
         #flower {
+        margin-top: 10px;    
        display: block;
        margin-left: auto;
        margin-right: auto;
-       width: 150px;
+       width: 200px;
        }
        #closebtn{
          position: absolute;
-         /* right: -24px;
-         top: -24px; */
+         right: -10px;
+         top: -15px;
       }
 
        
