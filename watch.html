@@ -1,27 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watch</title>
+    <script>
+        setInterval(() => {
+            d = new Date();
+            hr = d.getHours();
+            min = d.getMinutes();
+            Sec = d.getSecond();
+            hr_rotation = 30 * hr + min / 2;
+            min_rotation = 6 * min;
+            sec_rotation = 6 * sec;
+            hour.style.transform = `rotate(${hr_rotation}deg)`;
+            minute.style.transform = `rotate(${min_rotation}deg)`;
+            second.style.transform = `rotate(${sec_rotation}deg)`;
+        }, 1000);
+    </script>
     <style>
-        .clock container{
+        .clock container {
             position: relative;
             margin: auto;
-            height: 40vw;
-            width: 40vw;
-            background: url(clock.png)no-repeat;
+            height: 539.2px;
+            width: 539.2px;
+            background: url(clock.png) no-repeat;
             background-size: 100%;
+        }
+
+        #hour,
+        #minute,
+        #second {
+            position: absolute;
+            background: black;
+            border-radius: 10px;
+            transform-origin: bottom;
+        }
+
+        #hour {
+            width: 1.8%;
+            height: 25%;
+            top: 25%;
+            left: 48.85%;
+            opacity: 0.8;
+        }
+
+        #second {
+            width: 1%;
+            height: 40%;
+            top: 9%;
+            left: 49.25%;
+            opacity: 0.8;
         }
     </style>
 </head>
+
 <body>
-   <div class="clock container">
-       <div id="hour"></div>
-       <div id="min"></div>
-       <div id="second"></div>
-   </div>
+    <div class="clock container">
+        <div id="hour"></div>
+        <div id="min"></div>
+        <div id="second"></div>
+    </div>
 
 </body>
+
 </html>
