@@ -9,9 +9,9 @@
     <script>
         setInterval(() => {
             d = new Date();
-            hr = d.getHours();
-            min = d.getMinutes();
-            Sec = d.getSecond();
+            hr = d.gethours();
+            min = d.getminute();
+            Sec = d.getsecond();
             hr_rotation = 30 * hr + min / 2;
             min_rotation = 6 * min;
             sec_rotation = 6 * sec;
@@ -26,7 +26,7 @@
             margin: auto;
             height: 539.2px;
             width: 539.2px;
-            background: url(clock.png) no-repeat;
+            background: url(image/clock.jpg);
             background-size: 100%;
         }
 
